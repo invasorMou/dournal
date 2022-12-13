@@ -10,3 +10,4 @@ I think I could create a front end app that do all of this.
 4. I would like to store this in the browser
 5. Would like to work offline
 6. Would like to work as PWA, so I can 'isntall' in my phone.
+7. Would like to serve it as a github page
