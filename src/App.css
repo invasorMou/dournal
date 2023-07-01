@@ -1,0 +1,16 @@
+.App { 
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  text-align: center;
+}
+
+#new-to-do {
+  width: 80vw;
+}
+
+#add-to-do {
+  width: 15vw;
+}

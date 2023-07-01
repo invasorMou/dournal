@@ -37,9 +37,11 @@ function App() {
 
   return (
     <div className="App">
-      <p>
-        To do Journal
-      </p>
+      <div className="title">
+        <h1>
+          To do Journal
+        </h1>
+    </div>
       <ul 
         id='to-do-list'>
           { createListOfToDo() }
