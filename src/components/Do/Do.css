@@ -1,0 +1,6 @@
+.bullet {
+    margin: 5px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+}
