@@ -1,6 +1,15 @@
 .bullet {
-    margin: 5px 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 10fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.bullet p {
+  max-width: calc(100% - 30px);
+}
+
+#delete-to-do {
+  width: 30px;
+  height: 30px;
+}
+

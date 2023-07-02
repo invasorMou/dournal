@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   const [toDo, setToDo] = useState('');
   const [toDos, setToDos] = useState(() => {
-    const initialState = localStorage.getItem('todo');
+   const initialState = localStorage.getItem('todo');
     return initialState ? JSON.parse(initialState) : []
   });
 
@@ -32,7 +32,7 @@ function App() {
   function createListOfToDo(toDo, idx) {
     return toDos.map(
       (toDo, idx) => <Do key={idx} toDo={toDo} handleClick={() => handleDeleteTodo(idx)} />
-      )
+    )
   }
 
   return (
@@ -41,23 +41,25 @@ function App() {
         <h1>
           To do Journal
         </h1>
-    </div>
-      <ul 
+      </div>
+      <div 
         id='to-do-list'>
-          { createListOfToDo() }
-      </ul>
-      <input 
-        type='text'
-        id='new-to-do'
-        name='to-do'
-        value={toDo}
-        onChange={handleChange}
+        { createListOfToDo() }
+      </div>
+      <div className="to-do-menu">
+        <input 
+          type='text'
+          id='new-to-do'
+          name='to-do'
+          value={toDo}
+          onChange={handleChange}
         />
         <button 
           id='add-to-do'
           onClick={handleAddToDo}>
-            Add
+          Add
         </button>
+      </div>
     </div>
   );
 }

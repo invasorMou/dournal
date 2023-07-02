@@ -1,14 +1,25 @@
 .App { 
   width: 100vw;
   height: 100vh;
+  padding: 5vw;
+  box-sizing: border-box;
 }
 
 .title {
   text-align: center;
 }
 
+.title h1 {
+  margin: 0;
+}
+
+.to-do-menu {
+  display: flex;
+  justify-content: center;
+}
+
 #new-to-do {
-  width: 80vw;
+  width: 70vw;
 }
 
 #add-to-do {
